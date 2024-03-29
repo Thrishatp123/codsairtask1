@@ -1,0 +1,273 @@
+*{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    background-color: rgb(126, 223, 15);
+}
+.nav-link{
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: white;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white ;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+.content{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(119, 204, 23);
+
+}
+.content .right{
+    width: 50%;
+}
+.right h1{
+    margin-left: 0%;
+    font-size: 40px;
+    color: white;
+    font-family: fantasy;
+}
+
+.right p{
+    margin-left: 0%;
+    font-size: 15px;
+    color: black;
+    padding-block: 20px;
+}
+button{
+    border: none;
+    font-size: 18px;
+    
+
+}
+.btn{
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: black;
+    margin-left: 0%;
+    
+}
+
+.right-text-dark{
+    margin-right: 30%;
+
+}
+.left{
+    width: 50%;
+}
+.left img{
+    width: 100%;
+    margin-right: 50%;
+    /* mix-blend-mode: multiply; */
+}
+.my2{
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+}
+.fa-solid{
+    font-size: 4rem;
+    margin-left: 20px;
+    color: green;
+}
+.fa-solid br{
+    font-size: 20%;
+}
+.icon-container {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    background-color:  rgb(241, 241, 205);
+  }
+
+  .icon {
+    margin:  20px; /* Space between icons */
+    width: 110px; /* Set the width of the icon */
+    height: 75px; /* Set the height of the icon */
+    background-color: #ccc; /* Background color of the icon (replace with your icon) */
+    border-radius: 70%; /* Makes it a circle, adjust as needed */
+    line-height: 39px; /* Centers the text vertically */
+    text-align: center; /* Center the text horizontally */
+    font-size: 21px; /* Adjust font size as needed */
+    color: white; /* Color of the text */
+  }
+
+  .text {
+    margin-top: 20px; /* Space between the icon and text */
+    font-size: 16px; /* Font size of the text */
+    color: #333; /* Text color */
+  }
+
+  .c1 p{
+    margin-left: 60%;
+    font-size:x-large;
+    
+  }
+  .a img{
+    /* position: absolute; */
+    width: 350px;
+    margin-bottom: 100%;
+    margin-left: 10%;
+    margin-top: -60%;
+    z-index: 10 !important;
+
+  }
+  .c1 h1{
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .container2{
+    /* margin-bottom: 20px; */
+    background-color: white;
+    padding: 60px 50px;
+    /* position: relative; */
+    width: 40%;
+  }
+  .cont3{
+    margin-top: -800px;
+    text-align: center;
+  }
+  .container4{
+    background-color: papayawhip;
+  }
+
+  /* time line css */
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+.container-timeline {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgb(241, 241, 205);
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: rgb(5, 5, 5);
+  }
+}
+.process{
+  text-align: center;
+  background: rgb(241, 241, 205);
+}
+.product1{
+    margin: 0;
+    margin-bottom: 5%;
+}

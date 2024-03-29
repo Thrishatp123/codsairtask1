@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5564fd2102.js" crossorigin="anonymous"></script>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/stylehome.css' %}">
+
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-md bg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active mx-3  fs-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fs-5" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fs-5" aria-current="page" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3 fs-5" aria-current="page" href="#">Contacts</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+ <!-- navbar end -->
+<!-- home section start -->
+      <div class="content">
+        <div class="right">
+          <h1 class="text-uppercase">Delight in  every <br> bite with</h1> 
+          <h2 class="text-dark";>US</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt ut labore et dolore <br>
+            magna aliqua.</p>
+          <button class="btn">Learn More</button>
+        </div>
+        <div class="left">
+          <img src="{%static '/images/jackedit.jfif' %}" alt="">
+
+        </div>
+
+      </div>
+
+<!-- home section end -->
+
+<!-- amenities start -->
+
+  <div class="content1">
+    <h2 class="text-dark text-center my-" style="font-family:cursive; background-color: rgb(236, 236, 161) ;"> AMENITIES </h2>
+    <div class="icon-container" style="background-color: rgb(236, 236, 161);">
+      <div class="icon-wrapper">
+        <div class="icon"><i class="fa-solid fa-thumbs-up"></i></div>
+        <div class="text">GoodProduct</div>
+      </div>
+      <div class="icon-wrapper">
+        <div class="icon"><i class="fa-solid fa-truck"></i></div>
+        <div class="text">FastDelvery</div>
+      </div>
+      <div class="icon-wrapper">
+        <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+        <div class="text">TastyFood</div>
+      </div>
+    </div>
+</div>
+
+</div>
+<!-- amenities end -->
+
+<!-- about start -->
+<div class="a1">
+  <div class="c1">
+    <h1 class="text-dark">About Nutribbles</h1>
+    <p>Being stuck in a corporate loop, life was mundane and colourless. Our <br>founders Rinu and Dany were looking for ways to break out of it.<br> Thankfully they did not have to go very far. The answer was right in the <br>backyard of their house in a beautiful town in Wayanad, Kerala in the <br> form of a ‘Chakka’ aka Jackfruit on the 50 year old ‘Plaavu’ aka <br> Jackfruit tree. <br>
+      Having heard of the benefits of Jackfruit as part of daily meals, they <br> gathered all the information they could on the possibility and <br> goodness of Jackfruit powder. A training/workshop on behalf of the <br>Panchayat/Government, lots of research on Internet and more <br> homework brought them to the conclusion that ‘Chakka Podi’ or <br> ‘Jackfruit Powder’ could be the solution to their mundane lives. As the <br> next step they identified Jackfruit sources, possible markets, steps to <br> get the license in India and other countries and export methods.
+      </p>
+      <div class="a">
+        <img src="{% static '\images\jack2.jpeg' %}" alt="">
+      </div>
+  </div>
+</div>
+
+<!-- about end -->
+<!-- Timeline start -->
+<h1 class="process">Our Process</h1>
+  <div class="container-timeline">
+    <div class="timeline">
+      
+      <ul>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date"></h3>
+            <h1>Sources</h1>
+            <p>Estates in wayanad which could provide them with bulk produce was their first find. Through the Panchayat they met the Kudumbasree units who helped them source locally and clean and pick the jackfruit to processable  stage. </p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date"></h3>
+            <h1>Processing</h1>
+            <p>Next came the processing stage, which was just 2 simple stepsDehydrating the jackfruit using dryers
+              Milling them to the final product</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date"></h3>
+            <h1>Packing</h1>
+            <p>The product was tested in different authorised laboratories for various certifications before packaging to the current format.</p>
+          </div>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+ 
+  <!--timeline end  -->
+ 
+<!-- table start -->
+
+
+
+
+    <div class="container">
+        <h1>Customer Review</h1>
+        <table id="customers" border="1">
+            <thead>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Review</th>
+                <th>Country</th>
+                <th colspan="2" id="mid">Action</th>
+            </thead>
+            {% for x in mem %}
+            <tr>
+                <td>{{x.id}}</td>
+                <td>{{x.Firstname}}</td>
+                <td>{{x.Lastname}}</td>
+                <td>{{x.Country}}</td>
+                <td>
+                    <a href="update/{{x.id}}"><button id="up">update</button></a>
+                </td>
+                <td>
+                    <a href="delete/{{x.id}}"><button id="del">delete</button></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br><br>
+        <a href="{% url 'add' %}"><button id="new3">Add User</button></a>
+    </div>
+    <!-- table end -->
+    <!-- our product star -->
+    <div class="product1">
+    <img src="{% static '\images\product.jpeg' %}" alt="">
+    </div>
+    <!-- end -->
+    <img src="{% static '\images\fotter.jpeg' %}" alt="">
+</body>
+
+</html>
